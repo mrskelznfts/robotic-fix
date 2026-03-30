@@ -95,8 +95,8 @@ export default function App() {
               WAS NOT MEANT TO EXIST.
             </h1>
             <div className="mb-6">
-              <span className="inline-block px-6 py-3 bg-neon-blue/10 border border-neon-blue/30 text-neon-blue font-mono text-sm md:text-base tracking-widest rounded shadow-[0_0_15px_rgba(0,242,255,0.2)]">
-                CA:
+              <span className="inline-block px-6 py-3 bg-neon-blue/10 border border-neon-blue/30 text-neon-blue font-mono text-xs md:text-sm tracking-widest rounded shadow-[0_0_15px_rgba(0,242,255,0.2)] break-all max-w-full mx-4">
+                CA: h7dwe7fsnumzkfkvhvefnpcxbmxou8quwmdpdbltbags
               </span>
             </div>
             <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/60 font-mono mb-10 leading-relaxed">
