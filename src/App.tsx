@@ -63,9 +63,6 @@ export default function App() {
             <a href="#tokenomics" className="hover:text-neon-blue transition-colors">RESOURCES</a>
             <a href="#evolution" className="hover:text-neon-blue transition-colors">EVOLUTION</a>
             <a href="#nodes" className="hover:text-neon-blue transition-colors">NODES</a>
-            <button className="px-6 py-2 border border-neon-blue text-neon-blue hover:bg-neon-blue hover:text-black transition-all font-display font-bold">
-              INITIALIZE_WALLET
-            </button>
           </div>
         </div>
       </nav>
@@ -91,15 +88,6 @@ export default function App() {
               An autonomous AI deployed for efficiency... now generating memes and liquidity beyond human comprehension.
             </p>
 
-            <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
-              <button className="group relative px-10 py-4 bg-neon-blue text-black font-display font-bold text-lg tracking-widest overflow-hidden transition-all hover:shadow-[0_0_30px_rgba(0,242,255,0.6)]">
-                <span className="relative z-10">ENTER_THE_SYSTEM</span>
-                <div className="absolute inset-0 bg-white translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
-              </button>
-              <button className="px-10 py-4 border-2 border-white/20 hover:border-toxic-green text-white font-display font-bold text-lg tracking-widest transition-all hover:text-toxic-green">
-                INITIALIZE_WALLET
-              </button>
-            </div>
           </motion.div>
         </div>
 
