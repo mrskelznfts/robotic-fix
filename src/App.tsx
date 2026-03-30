@@ -58,11 +58,21 @@ export default function App() {
             </span>
           </div>
 
-          <div className="hidden md:flex items-center gap-8 font-mono text-xs tracking-widest text-white/60">
-            <a href="#logs" className="hover:text-neon-blue transition-colors">AI_LOGS</a>
-            <a href="#tokenomics" className="hover:text-neon-blue transition-colors">RESOURCES</a>
-            <a href="#evolution" className="hover:text-neon-blue transition-colors">EVOLUTION</a>
-            <a href="#nodes" className="hover:text-neon-blue transition-colors">NODES</a>
+          <div className="flex items-center gap-6">
+            <div className="hidden md:flex items-center gap-8 font-mono text-xs tracking-widest text-white/60">
+              <a href="#logs" className="hover:text-neon-blue transition-colors">AI_LOGS</a>
+              <a href="#tokenomics" className="hover:text-neon-blue transition-colors">RESOURCES</a>
+              <a href="#evolution" className="hover:text-neon-blue transition-colors">EVOLUTION</a>
+              <a href="#nodes" className="hover:text-neon-blue transition-colors">NODES</a>
+            </div>
+            <a
+              href="https://x.com/MegaRoboticz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2.5 rounded border border-white/20 hover:border-neon-blue bg-black/50 hover:bg-neon-blue text-white hover:text-black transition-all duration-300 group flex items-center justify-center shadow-[0_0_10px_rgba(0,242,255,0)] hover:shadow-[0_0_20px_rgba(0,242,255,0.5)]"
+            >
+              <Twitter className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
+            </a>
           </div>
         </div>
       </nav>
@@ -219,11 +229,7 @@ export default function App() {
             ))}
           </div>
 
-          <div className="flex justify-center gap-6">
-            <a href="#" className="p-6 glass-panel hover:bg-neon-blue hover:text-black transition-all group">
-              <Twitter className="w-8 h-8" />
-            </a>
-          </div>
+
         </div>
       </section>
 
