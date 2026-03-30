@@ -1,14 +1,14 @@
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { 
-  Zap, 
-  Cpu, 
-  Database, 
-  Network, 
-  Terminal, 
-  ShieldAlert, 
-  Twitter, 
-  Github, 
+import {
+  Zap,
+  Cpu,
+  Database,
+  Network,
+  Terminal,
+  ShieldAlert,
+  Twitter,
+  Github,
   MessageSquare
 } from 'lucide-react';
 
@@ -57,7 +57,7 @@ export default function App() {
               $ROBOTIC
             </span>
           </div>
-          
+
           <div className="hidden md:flex items-center gap-8 font-mono text-xs tracking-widest text-white/60">
             <a href="#logs" className="hover:text-neon-blue transition-colors">AI_LOGS</a>
             <a href="#tokenomics" className="hover:text-neon-blue transition-colors">RESOURCES</a>
@@ -75,7 +75,7 @@ export default function App() {
         <div className="absolute inset-0 z-0">
           <AIBrain />
         </div>
-        
+
         <div className="container mx-auto px-6 relative z-10 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -90,7 +90,7 @@ export default function App() {
             <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/60 font-mono mb-10 leading-relaxed">
               An autonomous AI deployed for efficiency... now generating memes and liquidity beyond human comprehension.
             </p>
-            
+
             <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
               <button className="group relative px-10 py-4 bg-neon-blue text-black font-display font-bold text-lg tracking-widest overflow-hidden transition-all hover:shadow-[0_0_30px_rgba(0,242,255,0.6)]">
                 <span className="relative z-10">ENTER_THE_SYSTEM</span>
@@ -163,7 +163,7 @@ export default function App() {
               { label: "Stabilization", value: "20%", color: "deep-purple", desc: "Algorithmic buybacks and burns" },
               { label: "Classified", value: "10%", color: "white", desc: "Unknown AI sub-protocols" }
             ].map((item, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 whileHover={{ y: -10 }}
                 className="glass-panel p-8 border-t-4 border-white/10 hover:border-neon-blue transition-all group"
@@ -181,11 +181,11 @@ export default function App() {
       <section id="evolution" className="py-32 relative overflow-hidden">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl md:text-6xl font-bold mb-20 text-center">EVOLUTION_STAGES</h2>
-          
+
           <div className="relative max-w-4xl mx-auto">
             {/* Vertical Line */}
             <div className="absolute left-1/2 top-0 bottom-0 w-px bg-white/10 -translate-x-1/2 hidden md:block" />
-            
+
             <div className="space-y-24">
               {[
                 { phase: "01", title: "INITIALIZATION", desc: "AI core activated. Rogue protocols deployed. Token genesis.", status: "COMPLETED" },
@@ -201,11 +201,11 @@ export default function App() {
                     <h3 className="text-3xl font-display font-bold mb-4">{stage.phase}. {stage.title}</h3>
                     <p className="text-white/60 font-mono leading-relaxed">{stage.desc}</p>
                   </div>
-                  
+
                   <div className="relative z-10 w-12 h-12 rounded-full bg-cyber-black border-2 border-neon-blue flex items-center justify-center shadow-[0_0_15px_rgba(0,242,255,0.3)]">
                     <div className={`w-4 h-4 rounded-full ${stage.status === 'COMPLETED' ? 'bg-toxic-green' : 'bg-neon-blue/20'}`} />
                   </div>
-                  
+
                   <div className="flex-1" />
                 </div>
               ))}
@@ -221,7 +221,7 @@ export default function App() {
           <p className="max-w-2xl mx-auto text-xl text-white/60 font-mono mb-16 leading-relaxed">
             Join the network before the AI removes the need for you. Every node strengthens the memetic core.
           </p>
-          
+
           <div className="flex flex-wrap justify-center gap-12 mb-20 opacity-40">
             {[...Array(6)].map((_, i) => (
               <div key={i} className="flex flex-col items-center gap-2">
@@ -234,12 +234,6 @@ export default function App() {
           <div className="flex justify-center gap-6">
             <a href="#" className="p-6 glass-panel hover:bg-neon-blue hover:text-black transition-all group">
               <Twitter className="w-8 h-8" />
-            </a>
-            <a href="#" className="p-6 glass-panel hover:bg-toxic-green hover:text-black transition-all group">
-              <MessageSquare className="w-8 h-8" />
-            </a>
-            <a href="#" className="p-6 glass-panel hover:bg-deep-purple hover:text-black transition-all group">
-              <Github className="w-8 h-8" />
             </a>
           </div>
         </div>
@@ -257,22 +251,22 @@ export default function App() {
               THIS SYSTEM IS AUTONOMOUS. NO ROADMAP. ONLY EVOLUTION.
             </p>
           </div>
-          
+
           <div className="flex gap-8 text-[10px] font-mono text-white/40 tracking-widest">
             <a href="#" className="hover:text-neon-blue">TERMS_OF_SERVICE</a>
             <a href="#" className="hover:text-neon-blue">PRIVACY_PROTOCOL</a>
             <a href="#" className="hover:text-neon-blue">AI_MANIFESTO</a>
           </div>
 
-          <button 
+          <button
             className="px-6 py-2 glass-panel text-[10px] font-mono text-white/20 hover:text-neon-blue hover:border-neon-blue transition-all flex items-center gap-2"
           >
             <ShieldAlert className="w-3 h-3" /> SYSTEM_STATUS: STABLE
           </button>
         </div>
-        
+
         {/* Secret Button */}
-        <button 
+        <button
           onClick={() => alert("AI: YOU WERE TOLD NOT TO CLICK. YOUR DATA HAS BEEN ARCHIVED.")}
           className="absolute bottom-4 left-4 opacity-0 hover:opacity-10 transition-opacity text-[8px] font-mono cursor-default"
         >
@@ -283,7 +277,7 @@ export default function App() {
       {/* Secret Message Toast */}
       <AnimatePresence>
         {secretMessage && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 50 }}
