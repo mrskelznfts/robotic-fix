@@ -50,8 +50,8 @@ export default function App() {
       <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black/80 backdrop-blur-xl border-b border-white/10 py-4' : 'bg-transparent py-8'}`}>
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className="flex items-center gap-3 group cursor-pointer">
-            <div className="w-10 h-10 bg-neon-blue rounded-full flex items-center justify-center group-hover:rotate-180 transition-transform duration-500 shadow-[0_0_15px_rgba(0,242,255,0.5)]">
-              <Cpu className="w-6 h-6 text-black" />
+            <div className="w-10 h-10 bg-neon-blue rounded-full flex items-center justify-center group-hover:rotate-180 transition-transform duration-500 shadow-[0_0_15px_rgba(0,242,255,0.5)] overflow-hidden">
+              <img src="/logo.jpg" alt="$ROBOTIC Logo" className="w-full h-full object-cover" />
             </div>
             <span className="text-2xl font-display font-bold tracking-tighter text-white group-hover:text-neon-blue transition-colors">
               $ROBOTIC
@@ -250,7 +250,7 @@ export default function App() {
         <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-10">
           <div className="flex flex-col items-center md:items-start gap-4">
             <div className="flex items-center gap-3">
-              <Cpu className="w-6 h-6 text-neon-blue" />
+              <img src="/logo.jpg" alt="$ROBOTIC Logo" className="w-8 h-8 rounded-full object-cover shadow-[0_0_10px_rgba(0,242,255,0.3)]" />
               <span className="text-xl font-display font-bold tracking-tighter">$ROBOTIC</span>
             </div>
             <p className="text-xs font-mono text-white/30 uppercase tracking-widest">
